@@ -13,10 +13,6 @@ section {
     cursor: pointer;
   }
 
-  .alinha {
-    margin-left: 5px;
-  }
-
   .results {
     display: grid;
     column-gap: 14px;

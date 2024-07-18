@@ -83,3 +83,13 @@ input {
         height: 400px;
     }
 }
+
+.finalizar_compra {
+    width: 160px;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10pt;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
