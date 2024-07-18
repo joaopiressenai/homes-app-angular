@@ -21,6 +21,7 @@ export class ImovelFinanciamentoComponent {
   valorEntrada: number | null = null
   prazoMeses = 0
   valorParcela = 0
+  valorImovel = ""
 
   constructor(
     private imvService: ImovelService,
@@ -29,6 +30,10 @@ export class ImovelFinanciamentoComponent {
   ) {
     const id = this.route.snapshot.params['id']
     this.imovel = this.imvService.buscarImovelPeloId(id)
+
+    if (this.imovel) {
+      this.valorImovel = this.formatCurrency(this.imovel.valor)
+    }
   }
 
   goBack(): void {
