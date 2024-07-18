@@ -20,4 +20,5 @@ export interface Imovel {
     latitude: number
     longitude: number
     aluguel: DetalhesAluguel[]
+    valor: number
 }

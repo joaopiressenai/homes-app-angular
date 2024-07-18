@@ -1,30 +1,49 @@
-import { Component } from '@angular/core';
-import { Imovel } from '../imovel';
-import { ImovelService } from '../imovel.service';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Location } from '@angular/common';
+import { Component } from '@angular/core'
+import { Imovel } from '../imovel'
+import { ImovelService } from '../imovel.service'
+import { ActivatedRoute, Router } from '@angular/router'
+import { CommonModule, Location } from '@angular/common'
+import { FormsModule } from '@angular/forms'
+import { registerLocaleData } from '@angular/common'
+import localePt from '@angular/common/locales/pt'
+
+registerLocaleData(localePt)
 
 @Component({
   selector: 'app-imovel-financiamento',
   standalone: true,
-  imports: [],
+  imports: [FormsModule, CommonModule],
   templateUrl: './imovel-financiamento.component.html',
-  styleUrl: './imovel-financiamento.component.css'
+  styleUrls: ['./imovel-financiamento.component.css']
 })
 export class ImovelFinanciamentoComponent {
-  imovel: Imovel | undefined;
+  imovel: Imovel | undefined
+  valorEntrada: number | null = null
+  prazoMeses = 0
+  valorParcela = 0
 
   constructor(
     private imvService: ImovelService,
     private route: ActivatedRoute,
-    private rt: Router,
     private location: Location
   ) {
-    const id = this.route.snapshot.params['id'];
-    this.imovel = this.imvService.buscarImovelPeloId(id);
+    const id = this.route.snapshot.params['id']
+    this.imovel = this.imvService.buscarImovelPeloId(id)
   }
 
   goBack(): void {
-    this.location.back();
+    this.location.back()
   }
+
+  calcular(): void {
+    if (this.imovel && this.valorEntrada !== null && this.prazoMeses > 0) {
+      this.valorParcela = (this.imovel.valor - this.valorEntrada) / this.prazoMeses
+    }
+  }
+
+  formatCurrency(value: number): string {
+    if (value === undefined || value === null) return ''
+    return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+  }
+  
 }

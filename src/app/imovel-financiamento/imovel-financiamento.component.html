@@ -7,9 +7,35 @@
             <p class="listing-location">
                 {{imovel?.cidade}}, {{imovel?.estado}}
             </p>
+            <p class="valor">Valor do imóvel: R${{imovel?.valor}}</p>
         </section>
         <section class="listing-features">
             <h2 class="section-heading">Informações do financiamento</h2>
+
+            <div>
+                <label for="">Valor entrada: </label>
+                <input type="number" [(ngModel)]="valorEntrada" min="0">
+
+                <label for="">Prazo meses: </label>
+                <select [(ngModel)]="prazoMeses">
+                    <option value="12">12</option>
+                    <option value="24">24</option>
+                    <option value="36">36</option>
+                    <option value="48">48</option>
+                    <option value="60">60</option>
+                    <option value="60">72</option>
+                    <option value="60">84</option>
+                    <option value="60">96</option>
+                    <option value="60">108</option>
+                    <option value="60">120</option>
+                    <option value="60">132</option>
+                    <option value="60">144</option>
+                </select>
+
+                <button class="primary" (click)="calcular()">Calcular</button><br>
+
+                <h3>Valor parcela: {{formatCurrency(valorParcela)}}</h3>
+            </div>
         </section>
     </article>
 </section>

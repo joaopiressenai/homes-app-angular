@@ -40,7 +40,8 @@ export class ImovelService {
           "chave": "Aluguel anual",
           "valor": 50000.00
         }
-      ]
+      ],
+      "valor": 450000.00
     },
     {
       "id": 2,
@@ -71,7 +72,8 @@ export class ImovelService {
           "chave": "Aluguel anual",
           "valor": 60000.00
         }
-      ]
+      ],
+      "valor": 550000.00
     },
     {
       "id": 3,
@@ -110,7 +112,8 @@ export class ImovelService {
           "chave": "Aluguel anual",
           "valor": 48000.00
         }
-      ]
+      ],
+      "valor": 650000.00
     },
     {
       "id": 4,
@@ -149,7 +152,8 @@ export class ImovelService {
           "chave": "Aluguel anual",
           "valor": 400000.00
         }
-      ]
+      ],
+      "valor": 750000.00
     },
     {
       "id": 5,
@@ -184,7 +188,8 @@ export class ImovelService {
           "chave": "Aluguel anual",
           "valor": 320000.00
         }
-      ]
+      ],
+      "valor": 850000.00
     },
     {
       "id": 6,
@@ -219,7 +224,8 @@ export class ImovelService {
           "chave": "Aluguel anual",
           "valor": 380000.00
         }
-      ]
+      ],
+      "valor": 950000.00
     },
     {
       "id": 7,
@@ -258,7 +264,8 @@ export class ImovelService {
           "chave": "Aluguel anual",
           "valor": 330000.00
         }
-      ]
+      ],
+      "valor": 1150000.00
     },
     {
       "id": 8,
@@ -271,7 +278,21 @@ export class ImovelService {
       "adicionais": [],
       "latitude": -22.7143,
       "longitude": -47.6451,
-      "aluguel": []
+      "aluguel": [
+        {
+          "chave": "Aluguel diária",
+          "valor": 750.00
+        },
+        {
+          "chave": "Aluguel mensal",
+          "valor": 2800.00
+        },
+        {
+          "chave": "Aluguel anual",
+          "valor": 330000.00
+        }
+      ],
+      "valor": 1150000.00
     },
     {
       "id": 9,
@@ -297,7 +318,8 @@ export class ImovelService {
           "chave": "Aluguel anual",
           "valor": 280000.00
         }
-      ]
+      ],
+      "valor": 1250000.00
     },
     {
       "id": 10,
@@ -323,8 +345,8 @@ export class ImovelService {
           "chave": "Aluguel anual",
           "valor": 350000.00
         }
-      ]
-
+      ],
+      "valor": 1350000.00
     }
   ]
 
