@@ -1,0 +1,15 @@
+<img src="voltar.png" alt="Voltar" class="voltar" (click)="goBack()">
+<section class="content">
+    <article>
+        <img src="{{imovel?.url_foto}}" alt="Foto" class="listing-photo">
+        <section class="listing-description">
+            <h2 class="listing-heading">{{imovel?.nome}}</h2>
+            <p class="listing-location">
+                {{imovel?.cidade}}, {{imovel?.estado}}
+            </p>
+        </section>
+        <section class="listing-features">
+            <h2 class="section-heading">Informações do financiamento</h2>
+        </section>
+    </article>
+</section>

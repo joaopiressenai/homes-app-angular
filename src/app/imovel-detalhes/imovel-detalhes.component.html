@@ -1,3 +1,4 @@
+<img src="voltar.png" alt="Voltar" class="voltar" (click)="goBack()">
 <section class="content">
     <article>
         <img src="{{imovel?.url_foto}}" alt="Foto" class="listing-photo">
@@ -21,10 +22,7 @@
             <button type="button" class="primary alinha finalizar_compra" (click)="abrirPaginaAluguel()">
                 Alugar
             </button>
-            <button type="button" class="primary alinha finalizar_compra">
-                Comprar
-            </button>
-            <button type="button" class="primary alinha finalizar_compra">
+            <button type="button" class="primary alinha finalizar_compra" (click)="abrirPaginaFinanciamento()">
                 Calcular financiamento
             </button>
         </div>
