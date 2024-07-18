@@ -1,1 +1,11 @@
-<p>imovel-aluguel works!</p>
+<section class="content">
+    <article>
+        <img src="{{imovel?.url_foto}}" alt="Foto" class="listing-photo">
+        <section class="listing-description">
+            <h2 class="listing-heading">{{imovel?.nome}}</h2>
+            <p class="listing-location">
+                {{imovel?.cidade}}, {{imovel?.estado}}
+            </p>
+        </section>
+    </article>
+</section>
