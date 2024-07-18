@@ -26,7 +26,21 @@ export class ImovelService {
         }
       ],
       "latitude": -20.2088,
-      "longitude": -44.4487
+      "longitude": -44.4487,
+      "aluguel": [
+        {
+          "chave": "Aluguel diária",
+          "valor": 700.00
+        },
+        {
+          "chave": "Aluguel mensal",
+          "valor": 45000.00
+        },
+        {
+          "chave": "Aluguel anual",
+          "valor": 50000.00
+        }
+      ]
     },
     {
       "id": 2,
@@ -43,7 +57,21 @@ export class ImovelService {
         }
       ],
       "latitude": -22.5095,
-      "longitude": -47.7752
+      "longitude": -47.7752,
+      "aluguel": [
+        {
+          "chave": "Aluguel diária",
+          "valor": 750.00
+        },
+        {
+          "chave": "Aluguel mensal",
+          "valor": 4000.00
+        },
+        {
+          "chave": "Aluguel anual",
+          "valor": 60000.00
+        }
+      ]
     },
     {
       "id": 3,
@@ -68,7 +96,21 @@ export class ImovelService {
         }
       ],
       "latitude": -22.7392,
-      "longitude": -47.3335
+      "longitude": -47.3335,
+      "aluguel": [
+        {
+          "chave": "Aluguel diária",
+          "valor": 600.00
+        },
+        {
+          "chave": "Aluguel mensal",
+          "valor": 2000.00
+        },
+        {
+          "chave": "Aluguel anual",
+          "valor": 48000.00
+        }
+      ]
     },
     {
       "id": 4,
@@ -93,7 +135,21 @@ export class ImovelService {
         }
       ],
       "latitude": -22.7834,
-      "longitude": -47.2991
+      "longitude": -47.2991,
+      "aluguel": [
+        {
+          "chave": "Aluguel diária",
+          "valor": 900.00
+        },
+        {
+          "chave": "Aluguel mensal",
+          "valor": 3500.00
+        },
+        {
+          "chave": "Aluguel anual",
+          "valor": 400000.00
+        }
+      ]
     },
     {
       "id": 5,
@@ -114,7 +170,21 @@ export class ImovelService {
         }
       ],
       "latitude": -22.7143,
-      "longitude": -47.6451
+      "longitude": -47.6451,
+      "aluguel": [
+        {
+          "chave": "Aluguel diária",
+          "valor": 700.00
+        },
+        {
+          "chave": "Aluguel mensal",
+          "valor": 2800.00
+        },
+        {
+          "chave": "Aluguel anual",
+          "valor": 320000.00
+        }
+      ]
     },
     {
       "id": 6,
@@ -135,7 +205,21 @@ export class ImovelService {
         }
       ],
       "latitude": -23.3002,
-      "longitude": -47.1366
+      "longitude": -47.1366,
+      "aluguel": [
+        {
+          "chave": "Aluguel diária",
+          "valor": 850.00
+        },
+        {
+          "chave": "Aluguel mensal",
+          "valor": 1500.00
+        },
+        {
+          "chave": "Aluguel anual",
+          "valor": 380000.00
+        }
+      ]
     },
     {
       "id": 7,
@@ -160,7 +244,21 @@ export class ImovelService {
         }
       ],
       "latitude": -22.8223,
-      "longitude": -47.2671
+      "longitude": -47.2671,
+      "aluguel": [
+        {
+          "chave": "Aluguel diária",
+          "valor": 750.00
+        },
+        {
+          "chave": "Aluguel mensal",
+          "valor": 2800.00
+        },
+        {
+          "chave": "Aluguel anual",
+          "valor": 330000.00
+        }
+      ]
     },
     {
       "id": 8,
@@ -172,7 +270,8 @@ export class ImovelService {
       "tipo": "casa",
       "adicionais": [],
       "latitude": -22.7143,
-      "longitude": -47.6451
+      "longitude": -47.6451,
+      "aluguel": []
     },
     {
       "id": 9,
@@ -184,7 +283,21 @@ export class ImovelService {
       "tipo": "apt",
       "adicionais": [],
       "latitude": -22.8223,
-      "longitude": -47.2671
+      "longitude": -47.2671,
+      "aluguel": [
+        {
+          "chave": "Aluguel diária",
+          "valor": 600.00
+        },
+        {
+          "chave": "Aluguel mensal",
+          "valor": 2400.00
+        },
+        {
+          "chave": "Aluguel anual",
+          "valor": 280000.00
+        }
+      ]
     },
     {
       "id": 10,
@@ -196,7 +309,22 @@ export class ImovelService {
       "tipo": "casa",
       "adicionais": [],
       "latitude": -22.5095,
-      "longitude": -47.7752
+      "longitude": -47.7752,
+      "aluguel": [
+        {
+          "chave": "Aluguel diária",
+          "valor": 800.00
+        },
+        {
+          "chave": "Aluguel mensal",
+          "valor": 3000.00
+        },
+        {
+          "chave": "Aluguel anual",
+          "valor": 350000.00
+        }
+      ]
+
     }
   ]
 

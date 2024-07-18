@@ -7,5 +7,14 @@
                 {{imovel?.cidade}}, {{imovel?.estado}}
             </p>
         </section>
+
+        <section class="listing-features">
+            <h2 class="section-heading">Informações do aluguel</h2>
+            <ul>
+                @for(info of imovel?.aluguel; track $index) {
+                <li>{{info.chave}}: {{info.valor}}</li>
+                }
+            </ul>
+        </section>
     </article>
 </section>
